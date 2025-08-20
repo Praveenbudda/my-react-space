@@ -1,0 +1,93 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  overflow: auto; /* ✅ Allow page scroll if form is bigger than screen */
+}
+
+.register-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  max-height: 90vh;    /* ✅ Restrict box height */
+  overflow-y: auto;    /* ✅ Scroll inside the box if content exceeds */
+}
+
+.register-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.register-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-input:focus {
+  border-color: #4facfe;
+}
+
+ .select {
+width: 409px
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #00c6ff;
+}
+
+.login-redirect {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-redirect a {
+  color: #4facfe;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}
+
+.dob-label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+select {
+  appearance: none;       /* Removes default arrow (for Chrome, Safari, etc.) */
+  -moz-appearance: none;  /* Firefox */
+  -webkit-appearance: none;
+  background-color: #ffffff;
+}
+
+

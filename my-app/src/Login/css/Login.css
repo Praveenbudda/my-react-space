@@ -1,0 +1,118 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* stops unwanted scrollbar */
+}
+
+
+.login-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-input:focus {
+  border-color: #4facfe;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #00c6ff;
+}
+
+.login-container {
+  min-height: 100vh; /* instead of height: 100vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/login_bg.jpg") no-repeat center center/cover;
+  position: relative;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* no scroll */
+}
+
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top, right, bottom, left = 0 */
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.login-box {
+  position: relative;
+  z-index: 1; /* keeps box above overlay */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1px 50px 30px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.login-header {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.login-header .login-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.company-name {
+  margin: 5px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  color: white;
+  opacity: 0.8;
+}
+
+.login-footer a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
